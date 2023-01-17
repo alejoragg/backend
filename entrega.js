@@ -15,7 +15,7 @@ class ProductManager {
   getProductById = id => {
     let product = [...this.products.values()].find(p => p.id === id);
     if (!product) {
-      throw new Error("Product not found.");
+      throw new Error("El producto no existe.");
     } else {
       return product;
     }
